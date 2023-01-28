@@ -1,0 +1,164 @@
+.help-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  margin-bottom: 150px;
+}
+
+.help-box-left {
+  position: relative;
+}
+
+.helparrow-img {
+  width: 185%;
+  position: absolute;
+  bottom: -100px;
+  right: 5px;
+  z-index: -1;
+}
+
+.help-left h3 {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1683fc;
+  margin-bottom: 10px;
+}
+
+.help-left h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 35px;
+  color: #1b2336;
+  margin-bottom: 25px;
+}
+
+.help-para {
+  margin-bottom: 25px;
+}
+
+.help-left p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+}
+
+.help-left-boxes {
+  display: flex;
+}
+
+.help-box-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.help-box-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #e3e9ed;
+  border-radius: 5px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1b2336;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.help-box:hover {
+  border: 1px solid #1683fc;
+}
+
+.check-icon {
+  color: #1683fc;
+  margin-right: 10px;
+}
+
+.help-right img {
+  width: 500px;
+}
+
+@media (max-width: 1024px) {
+  .help-right img {
+    width: 100%;
+  }
+
+  .help-left {
+    margin-left: 50px;
+  }
+  .help-left p {
+    font-size: 12px;
+  }
+
+  .help-left h2 {
+    font-size: 30px;
+  }
+
+  .help-box {
+    margin-bottom: 10px;
+  }
+
+  .help-box-left {
+    margin-right: 20px;
+  }
+
+  .helparrow-img {
+    width: 165%;
+    bottom: -70px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-container {
+    flex-direction: column;
+  }
+
+  .help-left-boxes {
+    justify-content: left;
+  }
+}
+
+@media (max-width: 430px) {
+  .help-container {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .help-left-boxes {
+    justify-content: center;
+  }
+  .help-left {
+    margin: 0px auto;
+  }
+  .helparrow-img {
+    display: none;
+  }
+  .help-box {
+    justify-content: left;
+    padding: 5px;
+  }
+  .help-left p {
+    font-size: 15px;
+  }
+  .help-left-boxes p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 350px) {
+  .help-left-boxes p {
+    font-size: 8px;
+  }
+}

@@ -1,0 +1,76 @@
+.telehealth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.telehealth-left-col h3 {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 13px;
+  color: #1683fc;
+  margin-bottom: 15px;
+}
+
+.telehealth-left-col h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 35px;
+  color: #1b2336;
+  margin-bottom: 40px;
+}
+
+.telehealth-left-col p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+}
+
+.first-para {
+  margin-bottom: 15px;
+}
+
+.second-para {
+  margin-bottom: 30px;
+}
+
+.telehealth-btn {
+  height: 50px;
+  width: 246px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #2279fc;
+  border: 1px solid #2279fc;
+  border-radius: 3px;
+}
+
+.telehealth-btn:hover {
+  color: #2279fc;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .telehealth-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .telehealth-right-col img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .telehealth-container {
+    flex-direction: column-reverse;
+  }
+}

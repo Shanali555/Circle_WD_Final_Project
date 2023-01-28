@@ -1,0 +1,248 @@
+header {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 5px 50px rgba(50, 112, 252, 0.08);
+  margin-bottom: 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 5px 50px rgba(50, 112, 252, 0.08);
+}
+
+.logo img {
+  width: 180px;
+  margin-right: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1b2336;
+  margin: 0 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #2279fc;
+}
+
+.search-box {
+  border: 1px solid #e5e5e5;
+  border-radius: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: #ffffff;
+}
+
+.search-box input::placeholder {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbaba;
+}
+
+.search-icon {
+  color: #2279fc;
+  cursor: pointer;
+}
+
+.phone-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  color: #2279fc;
+  background: rgba(50, 112, 252, 0.1);
+  border: 1px solid #2279fc;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.phone-number {
+  font-family: "Nunito Sans";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.appointment-btn {
+  padding: 5px 10px;
+  background: #2279fc;
+  border: 1px solid #2279fc;
+  border-radius: 3px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.appointment-btn:hover {
+  background-color: #ffffff;
+  color: #3270ff;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .phone-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .phone-icon svg {
+    font-size: 10px;
+  }
+
+  .phone-number {
+    font-family: "Nunito Sans";
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .appointment-btn {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 200px;
+    margin-right: 0px;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+
+  .search-box {
+    margin-bottom: 10px;
+  }
+
+  .phone-btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hamburger {
+    display: initial;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-box input {
+    padding: 2px;
+  }
+
+  .phone-btn,
+  .appointment-btn,
+  .search-box,
+  .navbar {
+    display: none;
+  }
+
+  .header-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo.active {
+    display: flex;
+  }
+
+  .navbar.active,
+  .navbar.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar.active ul li {
+    padding: 15px;
+  }
+
+  .navbar.active ul li a {
+    font-size: 20px;
+  }
+
+  .search-box.active {
+    display: flex;
+  }
+
+  .phone-btn.active {
+    display: flex;
+  }
+
+  .phone-btn.active .phone-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-btn.active .phone-icon svg {
+    font-size: 15px;
+  }
+
+  .phone-btn.active .phone-number {
+    font-size: 15px;
+  }
+
+  .header-btn.active .appointment-btn {
+    display: flex;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}

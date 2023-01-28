@@ -1,0 +1,282 @@
+.cart-container {
+  margin-bottom: 100px;
+}
+
+.cart-top {
+  background-image: url("/src/Images/cart-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.cart-right {
+  padding-left: 250px;
+}
+
+.cart-top h1 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  color: #1b2336;
+  margin-bottom: 20px;
+}
+
+.cart-top a {
+  flex-direction: row;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #415674;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.cart-top a:hover {
+  color: #2279fc;
+}
+
+.cart-top a:active {
+  color: #00ca99;
+}
+
+.cart-item {
+  margin-bottom: 100px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.row-title {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #1b2336;
+}
+
+.product {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #1b2336;
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  text-align: center;
+  border: 5px solid #000;
+}
+
+table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cart-checkout {
+  margin: 0 auto;
+  width: 600px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #afb5c4;
+  border-radius: 5px;
+}
+
+.light-line {
+  height: 1px;
+  background-color: #dedede;
+  border: none;
+}
+
+.dark-line {
+  height: 1px;
+  background-color: #ebebeb;
+  border: none;
+}
+
+.quantity-box {
+  display: flex;
+  justify-content: center;
+}
+
+.dec-btn {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #212529;
+  border: 1px solid #dedede;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+.dec-btn:hover {
+  color: white;
+  background-color: #2279fc;
+}
+
+.inc-btn {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #212529;
+  border: 1px solid #dedede;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+.inc-btn:hover {
+  color: white;
+  background-color: #2279fc;
+}
+
+.quantity {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #212529;
+  border: 1px solid #dedede;
+  background-color: #f8f8f8;
+  padding: 15px 40px;
+}
+
+.price .total-price {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #212529;
+}
+
+.cart-checkout h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1b2336;
+  margin-bottom: 20px;
+}
+
+.cart-checkout span {
+  display: flex;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+}
+
+.proceed-btn {
+  padding: 15px 30px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #2279fc;
+  border: 1px solid #2279fc;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.trash-icon {
+  cursor: pointer;
+  color: red;
+  font-size: 30px;
+}
+
+.cart-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coupon-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.coupon-box input {
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+
+.coupon-btn {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 30px;
+  margin: 1px;
+  background: #2279fc;
+  border: 1px solid #2279fc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.coupon-btn-s {
+  flex: 1;
+  text-align: right;
+}
+
+.update-btn {
+  padding: 15px 30px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  background: #2279fc;
+  border: 1px solid #2279fc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.summery-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 430px) {
+  table {
+    width: 200%;
+  }
+  .cart-checkout {
+    width: 100%;
+  }
+  .coupon-box {
+    margin-right: 200px;
+  }
+
+  .coupon-box input {
+    font-size: small;
+  }
+
+  .coupon-btn,
+  .update-btn {
+    padding: 10px 20px;
+  }
+}

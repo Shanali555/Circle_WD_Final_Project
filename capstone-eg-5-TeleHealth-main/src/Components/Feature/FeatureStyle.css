@@ -1,0 +1,88 @@
+.feature-container {
+  margin-bottom: 100px;
+}
+
+.feature-text p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #3270ff;
+  margin-bottom: 15px;
+}
+
+.feature-text h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  color: #1b2336;
+  margin-bottom: 50px;
+}
+
+.feature-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  margin-right: 20px;
+}
+
+.card h2 {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .feature-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card img {
+    width: 40%;
+  }
+
+  .card p {
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    margin: 0 auto;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 325px) {
+  .card h2 {
+    font-size: 15px;
+  }
+}

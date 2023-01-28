@@ -1,0 +1,116 @@
+.testimonial-container {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.slick-slide img {
+  display: inline !important;
+  margin-bottom: 30px;
+}
+
+.testimonial-container h3 {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1683fc;
+  margin-bottom: 15px;
+}
+
+.testimonial-container h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 35px;
+  color: #1b2336;
+  margin-bottom: 50px;
+}
+
+.testimonial-client p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 24px;
+  color: #415674;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.testimonial-client h4 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  color: #1b2336;
+  margin-top: 15px;
+  margin-bottom: -20px;
+}
+
+.testimonial-client h5 {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1683fc;
+}
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: rgba(50, 112, 255, 0.45) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #2279fc !important;
+}
+
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+
+.testimonial-clients-img {
+  position: relative;
+}
+
+.testimonial-clients-img img {
+  position: absolute;
+}
+
+.c1 {
+  left: 70px;
+  bottom: 400px;
+}
+
+.c2 {
+  right: 70px;
+  bottom: 380px;
+}
+
+.c3 {
+  left: 0px;
+  bottom: 200px;
+}
+
+.c4 {
+  left: 70px;
+  bottom: 50px;
+}
+
+.c5 {
+  right: 70px;
+  bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-clients-img {
+    display: none;
+  }
+  .testimonial-client p {
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .testimonial-client p {
+    font-size: 15px;
+  }
+}

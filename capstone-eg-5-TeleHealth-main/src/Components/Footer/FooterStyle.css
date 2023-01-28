@@ -1,0 +1,199 @@
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-site-col {
+  width: 300px;
+}
+
+.footer-site-col img {
+  max-width: 80%;
+}
+
+.footer-site-col p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+  margin-bottom: 20px;
+}
+
+.social-icons svg {
+  font-size: 30px;
+  color: #415674;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.social-icons svg:hover {
+  color: #2279fc;
+}
+
+.footer-contacts-col {
+  width: 300px;
+}
+
+.footer-contacts-col h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  color: #1b2336;
+  margin-bottom: 20px;
+}
+
+.footer-contacts-col p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+  margin-bottom: 20px;
+}
+
+.footer-links-col h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  color: #1b2336;
+  margin-bottom: 20px;
+}
+
+.footer-links-col ul {
+  padding-left: 15px;
+}
+
+.footer-links-col ul li {
+  margin-bottom: 15px;
+  list-style-type: square;
+  color: #2279fc;
+}
+
+.footer-links-col ul li a {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+  text-decoration: none;
+}
+
+.footer-links-col ul li a:hover {
+  color: #2279fc;
+}
+
+.footer-apps-col {
+  width: 350px;
+}
+
+.footer-apps-col h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  color: #1b2336;
+  margin-bottom: 25px;
+}
+
+.footer-apps-col p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+  margin-bottom: 20px;
+}
+
+.footer-btns {
+  display: flex;
+  align-items: center;
+}
+
+.footerplaystore-btn {
+  padding: 20px 25px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #1b2336;
+  border: 1px solid #2279fc;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.footerplaystore-btn:hover {
+  color: #ffffff;
+  background: #2279fc;
+}
+
+.footerappstore-btn {
+  padding: 20px 25px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #1b2336;
+  background: #f8fafb;
+  border: 1px solid #e3e9ed;
+  cursor: pointer;
+}
+
+.footerappstore-btn:hover {
+  color: #ffffff;
+  background: #2279fc;
+}
+.footer-line {
+  border-top: 1px solid #e3e9ed;
+}
+
+.footer-copyright {
+  padding: 50px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #415674;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 0.6fr 1.5fr;
+  gap: 0px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contact-title {
+  color: #2279fc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer-container {
+    padding: 10px;
+    gap: 10px 0px;
+    grid-template-columns: repeat(1, 0.5fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-apps-col {
+    width: 100%;
+  }
+
+  .footerplaystore-btn {
+    margin-right: 5px;
+  }
+}

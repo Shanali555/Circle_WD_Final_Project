@@ -1,0 +1,52 @@
+.count-container {
+  background-image: url("../../Images/count-bg.svg");
+  background-color: #0841ce;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 30px;
+}
+
+.count-left {
+  display: flex;
+  justify-content: center;
+}
+
+.count-right {
+  display: flex;
+  justify-content: center;
+}
+
+.counter-card {
+  padding: 25px 50px;
+}
+
+.counter-card h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.counter-card p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .count-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .counter-card {
+    padding: 10px 20px;
+  }
+}
